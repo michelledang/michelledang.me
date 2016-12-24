@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Rancho&effect=anaglyph|emboss');
 
 body {
-  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', 'Ubuntu', Helvetica, Arial, sans-serif;
   margin: auto;
   max-width: 960px;
-  min-width: 480px;
+  min-width: 500px;
   font-size: 15px;
 }
 
@@ -15,7 +16,7 @@ header {
   border-bottom-width: 12px;
   padding-bottom: 1px;
   margin-bottom: 1px;
-  margin-top: -32px
+  margin-top: 0px
   margin-right: 0.5em;
   margin-left: 0.5em;
 }
@@ -27,6 +28,8 @@ header h1 span {
 header h1 {
   padding-bottom: 0px;
   margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 1em;
   font-weight: 100;
   color: white;
   background-color: #b0b0f0;
@@ -77,8 +80,8 @@ div#left {
 div#left h1 {
   padding-bottom: 1px;
   margin-bottom: 2px;
-  margin-top: 20px;
-  color: #b0b0f0;
+  margin-top: 24px;
+  color: #a0a0f0;
 }
 
 div#left h2 {
@@ -128,7 +131,7 @@ div#right {
 
 div#right h1{
   margin-top: 20px;
-  color: #b0b0f0;
+  color: #a0a0f0;
 }
 
 div#right h2{
@@ -149,6 +152,7 @@ div#right ul{
   margin-top: 1em;
   padding-left: 1em;
   margin-left: 1em;
+  margin-right: 1em;
 }
 
 a {
