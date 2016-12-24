@@ -92,7 +92,7 @@ div#left h3 {
   font-size: 0.8em;
   width: 100%;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 1px;
 }
 
 div#left ul {
@@ -126,7 +126,7 @@ div#right {
 }
 
 div#right h1{
-  margin-top: 22px;
+  margin-top: 20px;
   color: purple;
 }
 
@@ -139,12 +139,13 @@ div#right h2{
 div#right h3{
   padding-top: 0px;
   padding-bottom: 0px;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   margin-top: 0em;
+  font-weight: 200;
 }
 
 div#right ul{
-  margin-top: 0.5em;
+  margin-top: 1em;
   padding-left: 1em;
   margin-left: 1em;
 }
