@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=anaglyph|emboss');
+
+body {
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+  margin: auto;
+  max-width: 960px;
+  min-width: 480px;
+  font-size: 15px;
+}
+
+header {
+  font-size: 2em;
+  border-bottom-style: double;
+  border-bottom-width: 12px;
+  padding-bottom: 1px;
+  margin-bottom: 1px;
+  margin-top: -32px
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+header h1 span {
+  font-size: 1rem
+}
+
+header h1 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-weight: 100;
+
+}
+
+header ul {
+  font-size: 0.5em;
+  margin-top: -1em;
+  padding-right: 0em;
+  text-align: right;
+}
+
+header ul li  {
+  margin-top: 0em;
+  display: inline;
+}
+
+header li:last-child:after  {
+  content: ""
+}
+
+header li:after  {
+  content: " | "
+}
+
+div h1 {
+  font-size: 1em;
+}
+
+div h2 {
+  font-size: 1em;
+}
+
+div h3 {
+  font-size: 1em;
+}
+
+/**left side-bar*/
+
+div#left {
+  width: 26%;
+  float: left;
+  font-size: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+div#left h1 {
+  padding-bottom: 1px;
+  margin-bottom: 2px;
+  margin-top: 20px;
+  color: purple;
+}
+
+div#left h2 {
+  font-size: 0.8em;
+  margin-bottom: .3em;
+  width: 100%;
+  border-bottom-width: 3px;
+}
+
+div#left h3 {
+  font-weight: 200;
+  font-size: 0.8em;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+div#left ul {
+  font-size: 0.8em;
+  margin-top: 0em;
+  padding-left: 0em;
+}
+
+div#left ul li  {
+  margin-top: 0em;
+  display: inline;
+}
+
+div#left li:last-child:after  {
+  content: ""
+}
+
+div#left li:after  {
+  content: " | "
+}
+
+
+/**right main column*/
+
+div#right {
+  width: 60%;
+  float: right;
+  height: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+div#right h1{
+  margin-top: 22px;
+  color: purple;
+}
+
+div#right h2{
+  font-size: 1.25em;
+  padding-top: 0px;
+  margin-bottom: auto;
+}
+
+div#right h3{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 1em;
+  margin-top: 0em;
+}
+
+div#right ul{
+  margin-top: 0.5em;
+  padding-left: 1em;
+  margin-left: 1em;
+}
+
+a {
+  color: purple;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+@media print {
+   body {
+     width: 850px;
+     font-size: 16x;
+     margin: auto;
+   }
+  
+  header {
+    margin-top: .5em;
+    font-size: 2em;
+  }
+  
+  div#left ul {
+    font-size: 12px;
+  }
+  
+}
