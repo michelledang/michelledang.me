@@ -14,8 +14,8 @@ header {
   font-size: 2em;
   border-bottom-style: double;
   border-bottom-width: 12px;
-  padding-bottom: 1px;
-  margin-bottom: 1px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
   margin-top: 0px;
 }
 
@@ -27,7 +27,7 @@ header h1 {
   padding-bottom: 0px;
   margin-bottom: 0px;
   margin-top: 0px;
-  padding-top: 1em;
+  padding-top: 0.5em;
   font-weight: 100;
   color: black;
   background-color: #ffffff;
@@ -71,8 +71,11 @@ div#left {
   width: 26%;
   float: left;
   font-size: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: black;
+  color: white;
+  padding-bottom: 1em;
 }
 
 div#left h1 {
@@ -130,20 +133,33 @@ div#right {
 div#right h1{
   margin-top: 20px;
   color: red;
+  margin-bottom: 0.5em;
 }
 
 div#right h2{
   font-size: 1.25em;
   padding-top: 0px;
   margin-bottom: auto;
+  margin-top: 0em;
 }
 
 div#right h3{
   padding-top: 0px;
   padding-bottom: 0px;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
   margin-top: 0em;
   font-weight: 200;
+  font-size: 1em;
+}
+
+div#right h4{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0.25em;
+  margin-top: -1.5em;
+  font-weight: 200;
+  text-align: right;
+  font-size: 1em;
 }
 
 div#right ul{
@@ -160,7 +176,8 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: cyan;
+  background-color: black;
 }
 
 @media print {
