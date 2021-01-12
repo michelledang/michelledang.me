@@ -10,7 +10,6 @@ body {
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
   font-size: 18px;
-  /* background-color: #ddede6; */
   background-color: #abd6c4;
 }
 
@@ -38,4 +37,6 @@ h4,
 h5,
 h6 {
   margin: 0px;
+  font-weight: 500;
+  color: #00613a;
 }

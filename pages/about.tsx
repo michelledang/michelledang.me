@@ -29,14 +29,26 @@ export default function About() {
 }
 
 const AboutWrapper = styled.div`
-  display: flex;
-  align-items: center;
+  @media only screen and (max-width: 768px) {
+    display: block;
+    margin-bottom: 64px;
+  }
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 `;
 
 const DescriptionWrapper = styled.div`
-  margin-right: 20px;
+  @media only screen and (min-width: 768px) {
+    margin-right: 40px;
+  }
 `;
 
 const StyledImg = styled.img`
   height: 266px;
+  @media only screen and (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
