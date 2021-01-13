@@ -42,9 +42,13 @@ const ChevronWrapper = styled.img`
   color: ${colors.main};
   width: 16px;
   height: 16px;
+  &:hover {
+    background-color: ${colors.accent};
+    border-radius: 50%;
+  }
 `;
 
 export const SectionTitleWrapper = styled.div`
-  margin: 48px 0px;
+  margin-bottom: 32px;
   text-align: center;
 `;

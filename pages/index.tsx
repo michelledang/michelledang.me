@@ -15,7 +15,7 @@ export default function Home() {
     icon: string;
   }) => {
     return (
-      <StyledIconA href={href}>
+      <StyledIconA href={href} target="_blank">
         <StyledIcon src={icon} alt={name}></StyledIcon>
       </StyledIconA>
     );
@@ -37,7 +37,8 @@ export default function Home() {
 
 const SocialsWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   @media only screen and (min-width: 768px) {
     width: 50%;
     margin-left: auto;
@@ -57,11 +58,11 @@ const StyledImg = styled.img`
 const StyledIcon = styled.img`
   @media only screen and (max-width: 768px) {
     width: 32px;
+    margin: 8px;
   }
   @media only screen and (min-width: 768px) {
     width: 24px;
   }
-  color: ${colors.main};
 `;
 
 const StyledIconA = styled(StyledA)`

@@ -40,3 +40,15 @@ h6 {
   font-weight: 500;
   color: #00613a;
 }
+
+hr {
+  background-color: #00613a;
+  color: #00613a;
+  height: 0.5px;
+  border: none;
+  margin: 40px 0;
+}
+
+section {
+  margin-bottom: 48px;
+}

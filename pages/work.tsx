@@ -47,6 +47,9 @@ export default function WorkExperience() {
         <title>Work Experience | {name}</title>
       </Head>
       <section>
+        <SectionTitleWrapper>
+          <h3>Overview</h3>
+        </SectionTitleWrapper>
         <p>My work experience is listed below, starting with most recent :) </p>
         <p>
           You can also download my{' '}
@@ -81,10 +84,15 @@ const WorkExperienceItem = styled.div`
 const Experience = styled.div``;
 
 const ExperienceHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 8px;
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 
 const ExperienceDescription = styled.p`

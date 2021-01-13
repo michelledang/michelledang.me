@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styled, { css } from 'styled-components';
 import { StyledA, Chevron } from './common';
+import Modal from 'react-modal';
+import { useState } from 'react';
 
 export const name = 'Michelle Dang';
 export const colors = {
@@ -23,11 +25,33 @@ export default function Layout({
   work?: boolean;
   projects?: boolean;
 }) {
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+  const openModal = () => {
+    setIsOpen(true);
+  };
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
+  };
+  const getHeaderLinks = () => {
+    return (
+      <>
+        <Link href="/about">
+          <HeaderA isCurrent={about}>About</HeaderA>
+        </Link>
+        <Link href="/work">
+          <HeaderA isCurrent={work}>Work</HeaderA>
+        </Link>
+        <Link href="/projects">
+          <HeaderA isCurrent={projects}>Projects</HeaderA>
+        </Link>
+      </>
+    );
   };
   return (
     <div>
@@ -46,28 +70,31 @@ export default function Layout({
       <header>
         <HeaderWrapper>
           <Link href="/">
-            <HeaderA first isCurrent={home}>
+            <HeaderA isTitle isCurrent={home}>
               {name}
             </HeaderA>
           </Link>
-          <HeaderSubWrapper>
-            <Link href="/about">
-              <HeaderA isCurrent={about}>About</HeaderA>
-            </Link>
-            <Link href="/work">
-              <HeaderA isCurrent={work}>Work</HeaderA>
-            </Link>
-            <Link href="/projects">
-              <HeaderA isCurrent={projects}>Projects</HeaderA>
-            </Link>
-          </HeaderSubWrapper>
+          <StyledModal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            contentLabel="Menu Modal"
+          >
+            <ModalCloseIcon src="/images/close.svg" onClick={closeModal} />
+            <ModalLinksWrapper>
+              <Link href="/">
+                <HeaderA isCurrent={home}>Home</HeaderA>
+              </Link>
+              {getHeaderLinks()}
+            </ModalLinksWrapper>
+          </StyledModal>
+          <MobileNavIcon src={'/images/menu.svg'} onClick={openModal} />
+          <HeaderSubWrapper>{getHeaderLinks()}</HeaderSubWrapper>
         </HeaderWrapper>
       </header>
       <MainWrapper>{children}</MainWrapper>
-      <ScrollButtonWrapper>
-        <StyledA onClick={scrollToTop}>
-          <StyledChevron up></StyledChevron>{' '}
-        </StyledA>
+      <ScrollButtonWrapper onClick={scrollToTop}>
+        <Chevron up></Chevron>
+        up
       </ScrollButtonWrapper>
     </div>
   );
@@ -83,15 +110,9 @@ const MainWrapper = styled.main`
 `;
 
 const HeaderWrapper = styled.div`
-  @media only screen and (max-width: 768px) {
-    display: block;
-    text-align: center;
-  }
-  @media only screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-  }
   margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
   border-bottom: solid 1px #00613a;
 `;
 
@@ -100,11 +121,32 @@ const HeaderSubWrapper = styled.div`
   justify-content: space-between;
   flex-grow: 1;
   @media only screen and (max-width: 768px) {
-    margin-top: 32px;
+    display: none;
   }
   @media only screen and (min-width: 768px) {
     max-width: 372px;
   }
+`;
+
+const StyledModal = styled(Modal)`
+  position: absolute;
+  inset: 40px;
+  border: 1px solid ${colors.main};
+  background: ${colors.accent};
+  overflow: auto;
+  border-radius: 0;
+  outline: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+`;
+
+const ModalLinksWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
 `;
 
 const HeaderA = styled.a`
@@ -121,12 +163,11 @@ const HeaderA = styled.a`
         `
       : ''};
   ${(props) =>
-    props.first
+    props.isTitle
       ? css`
           @media only screen and (max-width: 768px) {
-            font-size: 32px;
-            color: ${colors.accent};
-            background-color: ${colors.main};
+            font-style: normal;
+            font-size: 24px;
           }
         `
       : ''};
@@ -138,6 +179,7 @@ const HeaderA = styled.a`
 `;
 
 const ScrollButtonWrapper = styled.div`
+  color: ${colors.main};
   @media only screen and (max-width: 768px) {
     width: 100%;
     display: flex;
@@ -145,13 +187,27 @@ const ScrollButtonWrapper = styled.div`
   }
   @media only screen and (min-width: 768px) {
     position: fixed;
-    top: 50%;
+    top: 80%;
     right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
-const StyledChevron = styled(Chevron)`
-  &:hover {
-    color: ${colors.accent};
+const MobileNavIcon = styled.img`
+  color: ${colors.main};
+  width: 24px;
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const ModalCloseIcon = styled.img`
+  color: ${colors.main};
+  width: 16px;
+  margin-left: auto;
+  @media only screen and (min-width: 768px) {
+    display: none;
   }
 `;
