@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import styled, { css } from 'styled-components';
-import { StyledA, Chevron } from './common';
 import Modal from 'react-modal';
 import { useState } from 'react';
+import { Chevron } from './common';
 
 export const name = 'Michelle Dang';
 export const colors = {
@@ -66,6 +66,20 @@ export default function Layout({
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@_dangmichelle" />
         <meta name="twitter:creator" content="@_dangmichelle" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-RBPRQ6B9TB"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-RBPRQ6B9TB');
+            `,
+          }}
+        />
       </Head>
       <header>
         <HeaderWrapper>
@@ -94,7 +108,7 @@ export default function Layout({
       <MainWrapper>{children}</MainWrapper>
       <ScrollButtonWrapper onClick={scrollToTop}>
         <Chevron up></Chevron>
-        up
+        top
       </ScrollButtonWrapper>
     </div>
   );
@@ -183,7 +197,8 @@ const ScrollButtonWrapper = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   @media only screen and (min-width: 768px) {
     position: fixed;

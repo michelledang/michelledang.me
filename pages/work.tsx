@@ -26,7 +26,7 @@ export default function WorkExperience() {
         {/* <Logo src={logo} /> */}
         <Experience>
           <ExperienceHeader>
-            <h3>{company}</h3>
+            <h4>{company}</h4>
             <h5>{location}</h5>
           </ExperienceHeader>
           <ExperienceHeader>
@@ -78,7 +78,7 @@ export default function WorkExperience() {
 const WorkExperienceItem = styled.div`
   display: flex;
   align-items: flex-start;
-  margin-bottom: 64px;
+  margin-bottom: 40px;
 `;
 
 const Experience = styled.div``;
@@ -96,7 +96,6 @@ const ExperienceHeader = styled.div`
 `;
 
 const ExperienceDescription = styled.p`
-  font-size: 24px;
   line-height: 1;
 `;
 

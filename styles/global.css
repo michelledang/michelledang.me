@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 20px;
-  font-family: Libre Baskerville, -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
-  font-size: 18px;
+  font-family: Libre Baskerville, Georgia, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 20px;
   background-color: #abd6c4;
 }
 
@@ -23,10 +21,9 @@ img {
 }
 
 p {
-  font-family: Cutive Mono, Courier New, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
-  font-size: 24px;
+  font-family: Cutive Mono, Courier New, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 20px;
   line-height: 1.6;
 }
 

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-// import { colors } from './layout';
+import Image from 'next/image';
+
 const colors = {
   main: '#00613a',
   accent: '#ffc2ce',
@@ -31,17 +32,18 @@ export const Chevron = ({
       left={left}
       colors={colors}
       src={'/images/chevron.svg'}
+      alt={'Scroll up arrow.'}
+      width={16}
+      height={16}
     />
   );
 };
 
-const ChevronWrapper = styled.img`
+const ChevronWrapper = styled(Image)`
   ${(props) => (props.down ? 'transform: rotate(90deg)' : '')};
   ${(props) => (props.up ? 'transform: rotate(270deg)' : '')};
   ${(props) => (props.left ? 'transform: rotate(180deg)' : '')};
   color: ${colors.main};
-  width: 16px;
-  height: 16px;
   &:hover {
     background-color: ${colors.accent};
     border-radius: 50%;
@@ -50,5 +52,4 @@ const ChevronWrapper = styled.img`
 
 export const SectionTitleWrapper = styled.div`
   margin-bottom: 32px;
-  text-align: center;
 `;

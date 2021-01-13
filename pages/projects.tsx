@@ -58,7 +58,6 @@ const ProjectLinkWrapper = styled.div`
   margin: 20px 0px;
   @media only screen and (max-width: 768px) {
     display: block;
-    text-align: center;
   }
   @media only screen and (min-width: 768px) {
     display: flex;
