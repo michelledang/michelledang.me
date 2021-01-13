@@ -68,7 +68,7 @@ export default function Layout({
         <meta name="twitter:creator" content="@_dangmichelle" />
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-RBPRQ6B9TB"
+          src="https://www.googletagmanager.com/gtag/js?id=G-H82WKJD1P0"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -76,7 +76,7 @@ export default function Layout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-RBPRQ6B9TB');
+              gtag('config', 'G-H82WKJD1P0');
             `,
           }}
         />
