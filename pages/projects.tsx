@@ -65,13 +65,13 @@ const ProjectLinkWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &:hover {
+  }
+  &:hover {
+    color: ${colors.accent};
+    background-color: ${colors.main};
+    a {
       color: ${colors.accent};
       background-color: ${colors.main};
-      a {
-        color: ${colors.accent};
-        background-color: ${colors.main};
-      }
     }
   }
 `;
