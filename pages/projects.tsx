@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import Layout, { name } from '../components/layout';
+import Layout, { name, colors } from '../components/layout';
 import Link from 'next/link';
 import { StyledA, SectionTitleWrapper } from '../components/common';
 import { COURSEWARE_PROJECTS, CREATIVE_PROJECTS } from '../data/projects';
@@ -20,14 +20,16 @@ export default function Projects() {
     return external ? (
       <ProjectLinkWrapper>
         <StyledA href={href} target="_blank">
-          {title}
+          <LinkTitle>{title}</LinkTitle>
         </StyledA>
         <Category>{category}</Category>
       </ProjectLinkWrapper>
     ) : (
       <ProjectLinkWrapper>
         <Link href={href}>
-          <StyledLinkA>{title}</StyledLinkA>
+          <StyledLinkA>
+            <LinkTitle>{title}</LinkTitle>
+          </StyledLinkA>
         </Link>
         <Category>{category}</Category>
       </ProjectLinkWrapper>
@@ -55,7 +57,7 @@ export default function Projects() {
 }
 
 const ProjectLinkWrapper = styled.div`
-  margin: 20px 0px;
+  margin: 20px 0;
   @media only screen and (max-width: 768px) {
     display: block;
   }
@@ -63,16 +65,24 @@ const ProjectLinkWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &:hover {
+      color: ${colors.accent};
+      background-color: ${colors.main};
+      a {
+        color: ${colors.accent};
+        background-color: ${colors.main};
+      }
+    }
   }
 `;
 
-const Category = styled.h4`
+const Category = styled.p`
   @media only screen and (max-width: 768px) {
     font-size: 16px;
     margin-top: 8px;
   }
   @media only screen and (min-width: 768px) {
-    margin-left: 50px;
+    margin: 0 0 0 50px;
     text-align: right;
   }
 `;
@@ -82,4 +92,8 @@ const StyledLinkA = styled(StyledA)`
   &:hover {
     cursor: pointer;
   }
+`;
+
+const LinkTitle = styled.p`
+  margin: 0;
 `;

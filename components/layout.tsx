@@ -125,6 +125,7 @@ const MainWrapper = styled.main`
 
 const HeaderWrapper = styled.div`
   margin-bottom: 40px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   border-bottom: solid 1px #00613a;

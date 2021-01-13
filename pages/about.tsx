@@ -36,6 +36,7 @@ const AboutWrapper = styled.div`
   @media only screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
   }
 `;
 

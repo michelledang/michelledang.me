@@ -26,12 +26,12 @@ export default function WorkExperience() {
         {/* <Logo src={logo} /> */}
         <Experience>
           <ExperienceHeader>
-            <h4>{company}</h4>
-            <h5>{location}</h5>
+            <h5>{company}</h5>
+            <h6>{location}</h6>
           </ExperienceHeader>
           <ExperienceHeader>
-            <h4>{position}</h4>
-            <h5>{dates}</h5>
+            <h5>{position}</h5>
+            <h6>{dates}</h6>
           </ExperienceHeader>
           {descriptions.map((description) => (
             <ExperienceDescription>{description}</ExperienceDescription>
