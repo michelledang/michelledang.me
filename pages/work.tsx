@@ -6,6 +6,7 @@ import { StyledA, SectionTitleWrapper } from '../components/common';
 import { WORK_EXPERIENCES } from '../data/work_experiences';
 
 export default function WorkExperience() {
+  const showWorkExperience = false; // might show again later
   const getWorkExperienceItem = ({
     logo,
     company,
@@ -41,6 +42,17 @@ export default function WorkExperience() {
     );
   };
 
+  const getWorkExperience = () => {
+    return (
+      <section>
+        <SectionTitleWrapper>
+          <h3>Work Experience</h3>
+        </SectionTitleWrapper>
+        {WORK_EXPERIENCES.map((we) => getWorkExperienceItem(we))}
+      </section>
+    );
+  };
+
   return (
     <Layout work>
       <Head>
@@ -50,9 +62,8 @@ export default function WorkExperience() {
         <SectionTitleWrapper>
           <h3>Overview</h3>
         </SectionTitleWrapper>
-        <p>My work experience is listed below, starting with most recent :) </p>
         <p>
-          You can also download my{' '}
+          Please download my{' '}
           <StyledA href="http://michelledang.github.io/michelledang-resume.pdf">
             resume
           </StyledA>
@@ -65,12 +76,7 @@ export default function WorkExperience() {
           send an <StyledA href="mailto:mbdang@uwaterloo.ca">email</StyledA>!
         </p>
       </section>
-      <section>
-        <SectionTitleWrapper>
-          <h3>Work Experience</h3>
-        </SectionTitleWrapper>
-        {WORK_EXPERIENCES.map((we) => getWorkExperienceItem(we))}
-      </section>
+      {showWorkExperience && getWorkExperience()}
     </Layout>
   );
 }
