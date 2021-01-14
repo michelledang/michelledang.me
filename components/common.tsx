@@ -4,7 +4,7 @@ import Image from 'next/image';
 const colors = {
   main: '#00613a',
   accent: '#ffc2ce',
-  background: '#abd6c4',
+  background: '#f4f4f4',
 };
 
 export const StyledA = styled.a`

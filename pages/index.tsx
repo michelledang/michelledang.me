@@ -39,17 +39,15 @@ const SocialsWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  @media only screen and (min-width: 768px) {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  width: min(100%, 294px);
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const StyledImg = styled.img`
   margin-bottom: 32px;
   @media only screen and (min-width: 768px) {
-    width: 50%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -58,7 +56,7 @@ const StyledImg = styled.img`
 const StyledIcon = styled.img`
   @media only screen and (max-width: 768px) {
     width: 32px;
-    margin: 8px;
+    margin: 16px;
   }
   @media only screen and (min-width: 768px) {
     width: 24px;

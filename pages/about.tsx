@@ -21,7 +21,7 @@ export default function About() {
               things music!
             </p>
           </DescriptionWrapper>
-          <StyledImg src="/images/profile2.jpg" alt={name} />
+          <StyledImg src="/images/profile.jpg" alt={name} />
         </AboutWrapper>
       </section>
     </Layout>

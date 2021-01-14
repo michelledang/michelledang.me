@@ -9,7 +9,7 @@ export const name = 'Michelle Dang';
 export const colors = {
   main: '#00613a',
   accent: '#ffc2ce',
-  background: '#abd6c4',
+  background: '#f4f4f4', // d7f3eb
 };
 
 export default function Layout({
