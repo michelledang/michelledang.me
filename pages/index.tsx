@@ -26,7 +26,7 @@ export default function Home() {
         <title>Home | {name}</title>
       </Head>
       <section>
-        <StyledImg src="/images/cover.jpg" alt={name} />
+        <StyledImg src="/images/cover-bw.jpg" alt={name} />
         <SocialsWrapper>
           {SOCIALS.map((item) => getSocialLinkItem(item))}
         </SocialsWrapper>
