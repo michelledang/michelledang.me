@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
-
-const colors = {
-  main: '#00613a',
-  accent: '#ffffff', // ffc2ce
-  background: '#f4f4f4',
-};
+import { colors } from './constants';
 
 export const StyledA = styled.a`
   color: ${colors.main};

@@ -4,13 +4,9 @@ import styled, { css } from 'styled-components';
 import Modal from 'react-modal';
 import { useState } from 'react';
 import { Chevron } from './common';
+import { colors } from './constants';
 
 export const name = 'Michelle Dang';
-export const colors = {
-  main: '#00613a',
-  accent: '#ffffff', // ffc2ce
-  background: '#f4f4f4', // d7f3eb
-};
 
 export default function Layout({
   children,

@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import styled from 'styled-components';
-import Layout, { name, colors } from '../components/layout';
 import Link from 'next/link';
+import styled from 'styled-components';
+import Layout, { name } from '../components/layout';
+import { colors } from '../components/constants';
 import { StyledA, SectionTitleWrapper } from '../components/common';
 import { COURSEWARE_PROJECTS, CREATIVE_PROJECTS } from '../data/projects';
 

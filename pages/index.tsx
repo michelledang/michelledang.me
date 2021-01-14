@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import Layout, { name, colors } from '../components/layout';
 import styled from 'styled-components';
+import Layout, { name } from '../components/layout';
+import { colors } from '../components/constants';
 import { StyledA } from '../components/common';
 import { SOCIALS } from '../data/socials';
 

@@ -1,7 +1,6 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Layout, { name } from '../../components/layout';
-import { StyledA } from '../../components/common';
+import ProjectsFooter from '../../components/projectsFooter';
 
 export default function mdwav() {
   return (
@@ -12,9 +11,7 @@ export default function mdwav() {
       <section>
         <p>coming soon!</p>
       </section>
-      <Link href="/projects">
-        <StyledA>🠔 Back to all projects</StyledA>
-      </Link>
+      <ProjectsFooter />
     </Layout>
   );
 }
