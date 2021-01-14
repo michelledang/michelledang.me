@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const colors = {
   main: '#00613a',
-  accent: '#ffc2ce',
+  accent: '#ffffff', // ffc2ce
   background: '#f4f4f4',
 };
 

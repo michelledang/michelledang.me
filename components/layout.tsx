@@ -8,7 +8,7 @@ import { Chevron } from './common';
 export const name = 'Michelle Dang';
 export const colors = {
   main: '#00613a',
-  accent: '#ffc2ce',
+  accent: '#ffffff', // ffc2ce
   background: '#f4f4f4', // d7f3eb
 };
 
@@ -169,7 +169,7 @@ const HeaderA = styled.a`
   text-decoration: 'none';
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   padding: 4px;
   ${(props) =>
     props.isCurrent
@@ -182,7 +182,6 @@ const HeaderA = styled.a`
       ? css`
           @media only screen and (max-width: 768px) {
             font-style: normal;
-            font-size: 24px;
           }
         `
       : ''};
