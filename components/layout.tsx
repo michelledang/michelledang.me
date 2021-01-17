@@ -77,11 +77,11 @@ export default function Layout({
           }}
         />
       </Head>
-      <header>
+      <StyledHeader>
         <HeaderWrapper>
           <Link href="/">
             <HeaderA isTitle isCurrent={home}>
-              {name}
+              M
             </HeaderA>
           </Link>
           <StyledModal
@@ -100,7 +100,7 @@ export default function Layout({
           <MobileNavIcon src={'/images/menu.svg'} onClick={openModal} />
           <HeaderSubWrapper>{getHeaderLinks()}</HeaderSubWrapper>
         </HeaderWrapper>
-      </header>
+      </StyledHeader>
       <MainWrapper>{children}</MainWrapper>
       <ScrollButtonWrapper onClick={scrollToTop}>
         <Chevron up></Chevron>
@@ -110,21 +110,30 @@ export default function Layout({
   );
 }
 
+const StyledHeader = styled.header`
+  margin: 0 20px;
+`;
+
 const MainWrapper = styled.main`
+  max-width: 1080px;
   @media only screen and (max-width: 768px) {
-    margin: 48px 0px;
+    margin: 20px 20px;
   }
   @media only screen and (min-width: 768px) {
-    margin: 48px 100px;
+    margin: 20px 20px;
+    padding: 0 20px;
+  }
+  @media only screen and (min-width: 1080px) {
+    margin: 20px auto;
+    padding: 0 20px;
   }
 `;
 
 const HeaderWrapper = styled.div`
-  margin-bottom: 40px;
-  padding-bottom: 20px;
+  margin: 32px auto 48px;
   display: flex;
   justify-content: space-between;
-  border-bottom: solid 1px #00613a;
+  max-width: 1080px;
 `;
 
 const HeaderSubWrapper = styled.div`
@@ -163,9 +172,8 @@ const ModalLinksWrapper = styled.div`
 const HeaderA = styled.a`
   color: ${colors.main};
   text-decoration: 'none';
-  text-transform: uppercase;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   padding: 4px;
   ${(props) =>
     props.isCurrent
@@ -190,19 +198,22 @@ const HeaderA = styled.a`
 
 const ScrollButtonWrapper = styled.div`
   color: ${colors.main};
+  font-size: 12px;
   @media only screen and (max-width: 768px) {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 32px;
   }
   @media only screen and (min-width: 768px) {
-    position: fixed;
-    top: 80%;
-    right: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // position: fixed;
+    // top: 80%;
+    // right: 50px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    display: none;
   }
 `;
 

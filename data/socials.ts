@@ -1,5 +1,20 @@
 export const SOCIALS = [
   {
+    href: 'https://www.linkedin.com/in/dang-michelle/',
+    name: 'LinkedIn',
+    icon: '/images/linkedin.svg',
+  },
+  {
+    href: 'https://twitter.com/_dangmichelle',
+    name: 'Twitter',
+    icon: '/images/twitter.svg',
+  },
+  {
+    href: 'https://github.com/michelledang',
+    name: 'GitHub',
+    icon: '/images/github.svg',
+  },
+  {
     href: 'https://www.instagram.com/_dangmichelle/',
     name: 'Instagram',
     icon: '/images/instagram.svg',
@@ -13,21 +28,6 @@ export const SOCIALS = [
     href: 'https://www.last.fm/user/dangmichelle',
     name: 'Last.fm',
     icon: '/images/last-dot-fm.svg',
-  },
-  {
-    href: 'https://twitter.com/_dangmichelle',
-    name: 'Twitter',
-    icon: '/images/twitter.svg',
-  },
-  {
-    href: 'https://www.linkedin.com/in/dang-michelle/',
-    name: 'LinkedIn',
-    icon: '/images/linkedin.svg',
-  },
-  {
-    href: 'https://github.com/michelledang',
-    name: 'GitHub',
-    icon: '/images/github.svg',
   },
   {
     href: 'https://letterboxd.com/osytad/',

@@ -27,40 +27,73 @@ export default function Home() {
         <title>Home | {name}</title>
       </Head>
       <section>
-        <StyledImg src="/images/cover-bw.jpg" alt={name} />
+        <StyledImg src="/images/cover-wide.jpg" alt={name} />
+        <CoverText>
+          <CoverTextSpan>
+            Hi! I'm Michelle, a software engineer based in Toronto and New York.
+          </CoverTextSpan>
+        </CoverText>
         <SocialsWrapper>
           {SOCIALS.map((item) => getSocialLinkItem(item))}
         </SocialsWrapper>
       </section>
+      <div></div>
     </Layout>
   );
 }
+
+const CoverText = styled.h3`
+  transform: translateY(-124px) translateX(20px);
+  width: 60%;
+  min-width: 250px;
+  text-align: end;
+  line-height: 1.6;
+  margin-right: 0;
+  margin-left: auto;
+  margin-bottom: -64px;
+  @media only screen and (max-width: 768px) {
+    transform: translateY(-124px);
+    margin-bottom: -96px;
+  }
+`;
+
+const CoverTextSpan = styled.span`
+  background-color: ${colors.background};
+`;
 
 const SocialsWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: min(100%, 294px);
+  width: 224px;
   margin-left: auto;
   margin-right: auto;
+  @media only screen and (min-width: 768px) {
+    width: 30%;
+  }
 `;
 
 const StyledImg = styled.img`
   margin-bottom: 32px;
   @media only screen and (min-width: 768px) {
-    width: 40%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
+  filter: brightness(125%) gray; /* IE6-9 */
+  -webkit-filter: brightness(125%) grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: brightness(125%) grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  min-height: 372px;
+  object-fit: cover;
 `;
 
 const StyledIcon = styled.img`
   @media only screen and (max-width: 768px) {
-    width: 32px;
+    width: 20px;
     margin: 16px;
   }
   @media only screen and (min-width: 768px) {
-    width: 24px;
+    width: 20px;
   }
 `;
 
