@@ -24,19 +24,19 @@ export const SOCIALS = [
     name: 'Spotify',
     icon: '/images/spotify.svg',
   },
-  {
-    href: 'https://www.last.fm/user/dangmichelle',
-    name: 'Last.fm',
-    icon: '/images/last-dot-fm.svg',
-  },
-  {
-    href: 'https://letterboxd.com/osytad/',
-    name: 'Letterboxd',
-    icon: '/images/letterboxd.svg',
-  },
-  {
-    href: 'https://www.goodreads.com/mdwav',
-    name: 'Goodreads',
-    icon: '/images/goodreads.svg',
-  },
+  // {
+  //   href: 'https://www.last.fm/user/dangmichelle',
+  //   name: 'Last.fm',
+  //   icon: '/images/last-dot-fm.svg',
+  // },
+  // {
+  //   href: 'https://letterboxd.com/osytad/',
+  //   name: 'Letterboxd',
+  //   icon: '/images/letterboxd.svg',
+  // },
+  // {
+  //   href: 'https://www.goodreads.com/mdwav',
+  //   name: 'Goodreads',
+  //   icon: '/images/goodreads.svg',
+  // },
 ];

@@ -130,10 +130,13 @@ const MainWrapper = styled.main`
 `;
 
 const HeaderWrapper = styled.div`
-  margin: 32px auto 48px;
+  margin: 40px auto 48px;
   display: flex;
   justify-content: space-between;
   max-width: 1080px;
+  @media only screen and (max-width: 768px) {
+    margin: 32px auto 48px;
+  }
 `;
 
 const HeaderSubWrapper = styled.div`
@@ -173,7 +176,7 @@ const HeaderA = styled.a`
   color: ${colors.main};
   text-decoration: 'none';
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   padding: 4px;
   ${(props) =>
     props.isCurrent

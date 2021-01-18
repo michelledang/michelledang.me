@@ -27,7 +27,7 @@ export default function Home() {
         <title>Home | {name}</title>
       </Head>
       <section>
-        <StyledImg src="/images/cover-wide.jpg" alt={name} />
+        <StyledImg src="/images/cover.jpg" alt={name} />
         <CoverText>
           <CoverTextSpan>
             Hi! I'm Michelle, a software engineer based in Toronto and New York.
@@ -80,9 +80,6 @@ const StyledImg = styled.img`
     margin-left: auto;
     margin-right: auto;
   }
-  filter: brightness(125%) gray; /* IE6-9 */
-  -webkit-filter: brightness(125%) grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-  filter: brightness(125%) grayscale(1); /* Microsoft Edge and Firefox 35+ */
   min-height: 372px;
   object-fit: cover;
 `;
@@ -90,7 +87,7 @@ const StyledImg = styled.img`
 const StyledIcon = styled.img`
   @media only screen and (max-width: 768px) {
     width: 20px;
-    margin: 16px;
+    margin: 8px;
   }
   @media only screen and (min-width: 768px) {
     width: 20px;
