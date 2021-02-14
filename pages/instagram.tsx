@@ -32,7 +32,9 @@ export default function Instagram() {
     return (
       <LinkWrapper>
         <StyledA href={href} target="_blank">
-          <LinkTitle>{name}</LinkTitle>
+          <LinkTitle>
+            <LinkSpan>{name}</LinkSpan>
+          </LinkTitle>
         </StyledA>
       </LinkWrapper>
     );
@@ -98,6 +100,17 @@ const LinkWrapper = styled.div`
 const LinkTitle = styled.p`
   margin: 0;
   font-size: 16px;
+`;
+
+const LinkSpan = styled.span`
+  &:hover {
+    color: ${colors.accent};
+    background-color: ${colors.main};
+    a {
+      color: ${colors.accent};
+      background-color: ${colors.main};
+    }
+  }
 `;
 
 const SectionHeader = styled.h6`
