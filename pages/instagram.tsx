@@ -65,7 +65,7 @@ const SocialsWrapper = styled.div`
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 224px;
-  margin: 12px auto;
+  margin: 14px auto;
   @media only screen and (min-width: 768px) {
     width: 30%;
   }
@@ -82,9 +82,11 @@ const StyledIcon = styled.img`
 `;
 
 const StyledIconA = styled(StyledA)`
-  &:hover {
-    background-color: ${colors.accent};
-    border-radius: 50%;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-color: ${colors.accent};
+      border-radius: 50%;
+    }
   }
 `;
 
@@ -100,13 +102,17 @@ const LinkWrapper = styled.div`
 const LinkTitle = styled.p`
   margin: 0;
   font-size: 16px;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      color: ${colors.main};
+      text-decoration: underline;
+    }
+  }
 `;
 
 const LinkSpan = styled.span`
-  &:hover {
-    color: ${colors.accent};
-    background-color: ${colors.main};
-    a {
+  @media only screen and (min-width: 768px) {
+    &:hover {
       color: ${colors.accent};
       background-color: ${colors.main};
     }

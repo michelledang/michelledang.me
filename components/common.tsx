@@ -4,10 +4,12 @@ import { colors } from './constants';
 
 export const StyledA = styled.a`
   color: ${colors.main};
-  &:hover {
-    color: ${colors.accent};
-    background-color: ${colors.main};
-    text-decoration: none;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      color: ${colors.accent};
+      background-color: ${colors.main};
+      text-decoration: none;
+    }
   }
 `;
 
@@ -39,9 +41,11 @@ const ChevronWrapper = styled(Image)`
   ${(props) => (props.up ? 'transform: rotate(270deg)' : '')};
   ${(props) => (props.left ? 'transform: rotate(180deg)' : '')};
   color: ${colors.main};
-  &:hover {
-    background-color: ${colors.accent};
-    border-radius: 50%;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-color: ${colors.accent};
+      border-radius: 50%;
+    }
   }
 `;
 

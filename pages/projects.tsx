@@ -66,13 +66,13 @@ const ProjectLinkWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  &:hover {
-    color: ${colors.accent};
-    background-color: ${colors.main};
-    a {
+    &:hover {
       color: ${colors.accent};
       background-color: ${colors.main};
+      a {
+        color: ${colors.accent};
+        background-color: ${colors.main};
+      }
     }
   }
 `;
@@ -90,8 +90,10 @@ const Category = styled.p`
 
 const StyledLinkA = styled(StyledA)`
   text-decoration: underline;
-  &:hover {
-    cursor: pointer;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      cursor: pointer;
+    }
   }
 `;
 

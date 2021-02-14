@@ -15,9 +15,11 @@ const ProjectsLink = styled.a`
   color: ${colors.main};
   font-size: 16px;
   text-decoration: underline;
-  &:hover {
-    color: ${colors.accent};
-    background-color: ${colors.main};
-    text-decoration: none;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      color: ${colors.accent};
+      background-color: ${colors.main};
+      text-decoration: none;
+    }
   }
 `;

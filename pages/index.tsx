@@ -80,7 +80,7 @@ const StyledImg = styled.img`
     margin-left: auto;
     margin-right: auto;
   }
-  min-height: 372px;
+  min-height: 300px;
   object-fit: cover;
 `;
 
@@ -95,8 +95,10 @@ const StyledIcon = styled.img`
 `;
 
 const StyledIconA = styled(StyledA)`
-  &:hover {
-    background-color: ${colors.accent};
-    border-radius: 50%;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-color: ${colors.accent};
+      border-radius: 50%;
+    }
   }
 `;
