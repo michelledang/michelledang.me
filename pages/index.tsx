@@ -25,6 +25,11 @@ export default function Home() {
     <Layout home>
       <Head>
         <title>Home | {name}</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Libre+Baskerville&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <section>
         <StyledImg src="/images/cover.jpg" alt={name} />
