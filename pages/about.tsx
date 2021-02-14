@@ -11,7 +11,9 @@ export default function About() {
       <section>
         <AboutWrapper>
           <DescriptionWrapper>
-            <p>Hi! I'm Michelle, a software engineer from Toronto, Canada.</p>
+            <p>
+              Hi! I'm Michelle Dang, a software engineer from Toronto, Canada.
+            </p>
             <p>
               I am currently studying computer science at the University of
               Waterloo.

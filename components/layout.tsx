@@ -158,8 +158,9 @@ const HeaderSubWrapper = styled.div`
 
 const StyledModal = styled(Modal)`
   position: absolute;
-  inset: 40px;
-  margin: 40px auto;
+  margin: 38px 20px;
+  left: 0;
+  right: 0;
   border: 1px solid ${colors.main};
   background: ${colors.accent};
   overflow: auto;
@@ -176,6 +177,7 @@ const ModalLinksWrapper = styled.div`
   flex-direction: column;
   text-align: center;
   flex: 1;
+  margin: 20px;
 `;
 
 const HeaderA = styled.a`
