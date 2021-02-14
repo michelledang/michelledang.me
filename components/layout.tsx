@@ -208,11 +208,12 @@ const ScrollButtonWrapper = styled.div`
   color: ${colors.main};
   font-size: 12px;
   @media only screen and (max-width: 768px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 32px;
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // margin-bottom: 32px;
+    display: none;
   }
   @media only screen and (min-width: 768px) {
     // position: fixed;
