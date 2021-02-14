@@ -53,6 +53,11 @@ export default function Layout({
     <div>
       <Head>
         <link rel="icon" href="/images/favicon.png" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Libre+Baskerville&display=swap"
+          rel="stylesheet"
+        />
         <meta
           name="description"
           content="Hi! I'm Michelle Dang, a software engineer and computer science student at the University of Waterloo."
