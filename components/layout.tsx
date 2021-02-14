@@ -158,7 +158,8 @@ const HeaderSubWrapper = styled.div`
 
 const StyledModal = styled(Modal)`
   position: absolute;
-  inset: 40px;
+  inset: 20px;
+  margin: 20px;
   border: 1px solid ${colors.main};
   background: ${colors.accent};
   overflow: auto;
