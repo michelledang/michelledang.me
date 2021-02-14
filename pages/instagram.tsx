@@ -43,7 +43,7 @@ export default function Instagram() {
   return (
     <Layout home>
       <Head>
-        <title>Home | {name}</title>
+        <title>Instagram | {name}</title>
       </Head>
       <section>
         <SectionHeader>!!!</SectionHeader>
