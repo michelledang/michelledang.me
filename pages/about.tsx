@@ -15,7 +15,8 @@ export default function About() {
               Hi! I'm Michelle Dang, a software engineer from Toronto, Canada.
             </p>
             <p>
-              I am currently studying computer science at the University of
+              I am currently finishing a Bachelor's of Computer Science with a
+              specialization in Human-Computer Interaction at the University of
               Waterloo.
             </p>
             <p>
@@ -49,9 +50,11 @@ const DescriptionWrapper = styled.div`
 `;
 
 const StyledImg = styled.img`
-  height: 266px;
+  height: 500px;
   @media only screen and (max-width: 768px) {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    height: auto;
   }
 `;

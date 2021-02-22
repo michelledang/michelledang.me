@@ -43,6 +43,11 @@ export const SOCIALS = [
 
 export const IG_LINKS = [
   {
+    href:
+      'https://nymag.com/strategist/article/where-to-donate-to-help-asian-communities-2021.html',
+    name: '45 Ways to Donate in Support of Asian Communities',
+  },
+  {
     href: 'https://blacklivesmatters.carrd.co/',
     name: 'blacklivesmatters.carrd.co',
   },
