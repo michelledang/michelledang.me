@@ -54,7 +54,8 @@ const StyledImg = styled.img`
   @media only screen and (max-width: 768px) {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    margin-top: 40px;
+    width: 66%;
     height: auto;
   }
 `;
