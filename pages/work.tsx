@@ -64,16 +64,15 @@ export default function WorkExperience() {
         </SectionTitleWrapper>
         <p>
           Please download my{' '}
-          <StyledA href="http://michelledang.github.io/michelledang-resume.pdf">
-            resume
-          </StyledA>
-          , connect on{' '}
+          <StyledA href="/documents/Michelle-Dang_Resume.pdf">resume</StyledA>,
+          connect on{' '}
           <StyledA href="https://www.linkedin.com/in/dang-michelle">
             LinkedIn
           </StyledA>
           , view my{' '}
           <StyledA href="https://github.com/michelledang">GitHub</StyledA> or
-          send an <StyledA href="mailto:mbdang@uwaterloo.ca">email</StyledA>!
+          send an{' '}
+          <StyledA href="mailto:michelle.dang3929@gmail.com">email</StyledA>!
         </p>
       </section>
       {showWorkExperience && getWorkExperience()}
