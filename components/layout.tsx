@@ -3,8 +3,9 @@ import Link from 'next/link';
 import styled, { css } from 'styled-components';
 import Modal from 'react-modal';
 import { useState } from 'react';
-import { Chevron } from './common';
+import { Chevron, StyledA } from './common';
 import { colors } from './constants';
+import { SOCIALS } from '../data/socials';
 
 export const name = 'Michelle Dang';
 
@@ -47,6 +48,21 @@ export default function Layout({
           <HeaderA isCurrent={projects}>Projects</HeaderA>
         </Link>
       </>
+    );
+  };
+  const getSocialLinkItem = ({
+    href,
+    name,
+    icon,
+  }: {
+    href: string;
+    name: string;
+    icon: string;
+  }) => {
+    return (
+      <StyledIconA href={href} target="_blank">
+        <StyledIcon src={icon} alt={name}></StyledIcon>
+      </StyledIconA>
     );
   };
   return (
@@ -107,6 +123,12 @@ export default function Layout({
         </HeaderWrapper>
       </StyledHeader>
       <MainWrapper>{children}</MainWrapper>
+      <FooterWrapper>
+        <SocialsWrapper>
+          {SOCIALS.map((item) => getSocialLinkItem(item))}
+        </SocialsWrapper>
+        <CopyrightText>&copy; 2021 Michelle Dang</CopyrightText>
+      </FooterWrapper>
       <ScrollButtonWrapper onClick={scrollToTop}>
         <Chevron up></Chevron>
         top
@@ -245,5 +267,49 @@ const ModalCloseIcon = styled.img`
   margin-left: auto;
   @media only screen and (min-width: 768px) {
     display: none;
+  }
+`;
+
+const FooterWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
+
+const SocialsWrapper = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 224px;
+  margin-left: auto;
+  margin-right: auto;
+  @media only screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
+`;
+
+const CopyrightText = styled.p`
+  text-align: center;
+  color: ${colors.main};
+  margin-top: 8px;
+  font-size: 12px;
+`;
+
+const StyledIcon = styled.img`
+  @media only screen and (max-width: 768px) {
+    width: 20px;
+    margin: 8px;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 20px;
+  }
+`;
+
+const StyledIconA = styled(StyledA)`
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-color: ${colors.accent};
+      border-radius: 50%;
+    }
   }
 `;

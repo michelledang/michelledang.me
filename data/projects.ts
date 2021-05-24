@@ -44,4 +44,10 @@ export const CREATIVE_PROJECTS = [
     category: 'Photography',
     external: false,
   },
+  {
+    href: 'https://www.instagram.com/ar/266124697856795/',
+    title: 'Which Alex G album are you?',
+    category: 'Instagram Filter',
+    external: true,
+  },
 ];
