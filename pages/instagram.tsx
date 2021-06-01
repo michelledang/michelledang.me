@@ -50,26 +50,11 @@ export default function Instagram() {
         <LinksWrapper>
           {IG_LINKS.map((item) => getExternalLinkItem(item))}
         </LinksWrapper>
-        <SectionHeader>You can also find me here:</SectionHeader>
-        <SocialsWrapper>
-          {IG_SOCIALS.map((item) => getSocialLinkItem(item))}
-        </SocialsWrapper>
       </section>
       <div></div>
     </Layout>
   );
 }
-
-const SocialsWrapper = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 224px;
-  margin: 14px auto;
-  @media only screen and (min-width: 768px) {
-    width: 30%;
-  }
-`;
 
 const StyledIcon = styled.img`
   @media only screen and (max-width: 768px) {

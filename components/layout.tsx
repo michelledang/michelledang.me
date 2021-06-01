@@ -283,9 +283,7 @@ const SocialsWrapper = styled.div`
   width: 224px;
   margin-left: auto;
   margin-right: auto;
-  @media only screen and (max-width: 768px) {
-    margin-top: 20px;
-  }
+  margin-top: 20px;
 `;
 
 const CopyrightText = styled.p`
@@ -301,7 +299,7 @@ const StyledIcon = styled.img`
     margin: 8px;
   }
   @media only screen and (min-width: 768px) {
-    width: 20px;
+    width: 16px;
   }
 `;
 
