@@ -27,22 +27,16 @@ export const COURSEWARE_PROJECTS = [
 
 export const CREATIVE_PROJECTS = [
   {
-    href: 'https://michelledang.github.io/statify',
+    href: 'https://statify.michelledang.me/',
     title: 'Statify: View your top Spotify stats.',
     category: 'Music',
     external: true,
   },
   {
-    href: '/projects/mdwav',
-    title: 'md.wav: photos + playlists.',
-    category: 'Music & Photography',
-    external: false,
-  },
-  {
-    href: '/projects/35mm',
+    href: 'https://www.instagram.com/md.wav/',
     title: '35mm.',
     category: 'Photography',
-    external: false,
+    external: true,
   },
   {
     href: 'https://www.instagram.com/ar/266124697856795/',
