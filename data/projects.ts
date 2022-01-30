@@ -6,7 +6,7 @@ export const COURSEWARE_PROJECTS = [
     external: true,
   },
   {
-    href: 'http://michelledang.me/documents/cs486-report.pdf',
+    href: 'http://dangmichelle.com/documents/cs486-report.pdf',
     title: 'Research Paper: Predicting the Popularity of Songs.',
     category: 'CS486 (AI)',
     external: true,
@@ -27,7 +27,7 @@ export const COURSEWARE_PROJECTS = [
 
 export const CREATIVE_PROJECTS = [
   {
-    href: 'https://statify.michelledang.me/',
+    href: 'https://statify.dangmichelle.com/',
     title: 'Statify: View your top Spotify stats.',
     category: 'Music',
     external: true,
